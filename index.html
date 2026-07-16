@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Conscious Capitals x ElonGates Union</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#FAF9F6',
+            forest: '#112211',
+            sage: '#2E5A44',
+            gold: '#D4AF37',
+            charcoal: '#1C2826',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            serif: ['Playfair Display', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="antialiased selection:bg-sage selection:text-cream">
+
+  <!-- NAVIGATION BAR -->
+  <header class="fixed top-0 left-0 w-full z-50 glass transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      
+      <!-- Logo Area -->
+      <div class="flex items-center space-x-4 cursor-pointer hover:opacity-80 transition-opacity">
+        <span class="font-serif font-bold text-xl tracking-tight text-forest">Conscious Capitals</span>
+        <div class="h-6 w-px bg-forest/20"></div>
+        <span class="font-sans font-light tracking-widest text-sm uppercase text-forest">ElonGates</span>
+      </div>
+      
+      <!-- Desktop Links -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#hero" class="text-sm font-medium text-charcoal/80 hover:text-sage transition-colors">The Union</a>
+        <a href="#profile" class="text-sm font-medium text-charcoal/80 hover:text-sage transition-colors">Why Conscious Capitals</a>
+        <a href="#synergy" class="text-sm font-medium text-charcoal/80 hover:text-sage transition-colors">Synergy Map</a>
+        <a href="#metrics" class="text-sm font-medium text-charcoal/80 hover:text-sage transition-colors">Sourcing Ledger</a>
+      </nav>
+      
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a href="#charter" class="px-6 py-2.5 rounded-full bg-forest text-cream text-sm font-medium hover:bg-sage transition-colors shadow-sm hover:shadow-md">
+          Explore the Clean Label Charter
+        </a>
+      </div>
+      
+      <!-- Mobile Menu Button (simplified for static) -->
+      <button class="md:hidden text-forest">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SECTION 1: THE HERO -->
+    <section id="hero" class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
+      <!-- Background subtle gradient -->
+      <div class="absolute inset-0 bg-gradient-to-br from-cream via-cream to-[#e8e6df] -z-10"></div>
+      <!-- Decorative circle -->
+      <div class="absolute top-1/4 -right-64 w-[800px] h-[800px] bg-sage/5 rounded-full blur-3xl -z-10"></div>
+
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        
+        <!-- Left Column: Copy -->
+        <div class="max-w-2xl reveal reveal-delay-1">
+          <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full border border-gold/30 bg-gold/10 text-gold text-xs font-semibold tracking-wider mb-8">
+            <i data-lucide="star" class="w-3.5 h-3.5"></i>
+            <span>PORTFOLIO SPOTLIGHT: SEED ROUND 2026</span>
+          </div>
+          
+          <h1 class="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-forest mb-6">
+            Scaling Purity <br>
+            <span class="text-sage italic">Without Compromising</span><br>
+            Integrity.
+          </h1>
+          
+          <p class="text-lg text-charcoal/80 leading-relaxed mb-10 font-light max-w-xl">
+            Conscious Capitals is proud to announce its Series Seed partnership with ElonGates. Together, we are proving that capital efficiency and absolute ingredient honesty can scale hand-in-hand.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <a href="#term-sheet" class="px-8 py-3.5 rounded-full bg-sage text-cream text-center font-medium hover:bg-forest transition-colors shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 group">
+              <span>View the Term Sheet</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#charter" class="px-8 py-3.5 rounded-full border border-forest text-forest text-center font-medium hover:bg-forest/5 transition-colors flex items-center justify-center">
+              Read the Pure-Label Charter
+            </a>
+          </div>
+        </div>
+        
+        <!-- Right Column: Card -->
+        <div class="relative reveal reveal-delay-3">
+          <!-- Glassmorphism Card -->
+          <div class="glass-card rounded-2xl p-8 lg:p-12 hover-lift relative overflow-hidden">
+            <!-- Subtle diagonal line design -->
+            <div class="absolute -top-24 -right-24 w-48 h-48 bg-sage/10 rotate-45 transform"></div>
+            
+            <div class="flex items-center justify-between mb-8 border-b border-forest/10 pb-6">
+              <div>
+                <p class="text-xs font-bold text-forest/50 uppercase tracking-widest mb-1">Deal Profile</p>
+                <h3 class="font-serif text-2xl text-forest">Series Seed Deal Card</h3>
+              </div>
+              <div class="w-12 h-12 rounded-full bg-sage/10 flex items-center justify-center text-sage">
+                <i data-lucide="briefcase" class="w-6 h-6"></i>
+              </div>
+            </div>
+            
+            <div class="space-y-6">
+              <div class="flex justify-between items-end border-b border-forest/5 pb-4">
+                <p class="text-sm text-charcoal/60">Investment</p>
+                <p class="text-xl font-medium text-forest font-serif">₹10 Crore</p>
+              </div>
+              <div class="flex justify-between items-end border-b border-forest/5 pb-4">
+                <p class="text-sm text-charcoal/60">Post-Money Valuation</p>
+                <p class="text-xl font-medium text-forest font-serif">₹55.55 Crore</p>
+              </div>
+              <div class="flex justify-between items-end border-b border-forest/5 pb-4">
+                <p class="text-sm text-charcoal/60">Founder Equity Retained</p>
+                <p class="text-xl font-medium text-forest font-serif">82%</p>
+              </div>
+            </div>
+            
+            <div class="mt-10 bg-cream/50 rounded-xl p-4 flex items-center justify-center space-x-3 border border-forest/5">
+              <div class="w-2.5 h-2.5 rounded-full bg-sage status-indicator"></div>
+              <p class="text-sm font-medium text-sage uppercase tracking-wider">Status: Locked & Fully Funded</p>
+            </div>
+          </div>
+          
+          <!-- Decorative abstract shapes behind card -->
+          <div class="absolute -bottom-6 -left-6 w-24 h-24 border border-gold/30 rounded-full -z-10"></div>
+          <div class="absolute top-1/2 -right-4 w-12 h-12 bg-forest/5 rounded-full -z-10"></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMPREHENSIVE PROFILE -->
+    <section id="profile" class="py-24 bg-forest text-cream relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-20 reveal">
+          <h2 class="font-serif text-4xl md:text-5xl mb-6">Who is Conscious Capitals?</h2>
+          <p class="text-lg font-light text-cream/80 leading-relaxed">
+            Investing for Money & Mankind. We are a double-bottom-line Venture Capital firm backing high-integrity founders who refuse to compromise.
+          </p>
+        </div>
+        
+        <!-- Three Pillars Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          
+          <!-- Pillar 1 -->
+          <div class="glass-dark p-8 rounded-2xl hover-lift reveal reveal-delay-1">
+            <div class="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center text-sage mb-6">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl mb-4">Capital with a Clean Label</h3>
+            <p class="text-sm text-cream/70 leading-relaxed font-light">
+              We provide non-oppressive, growth-focused capital that respects founder control. No forced marketplace listings, no quality-diluting strategies, and zero artificial shortcuts.
+            </p>
+          </div>
+          
+          <!-- Pillar 2 -->
+          <div class="glass-dark p-8 rounded-2xl hover-lift reveal reveal-delay-2">
+            <div class="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center text-sage mb-6">
+              <i data-lucide="leaf" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl mb-4">The Carbon-Neutral Ecosystem</h3>
+            <p class="text-sm text-cream/70 leading-relaxed font-light">
+              We build proprietary carbon-offset pathways. By auditing and reducing our portfolio's Scope 1-3 emissions, we convert sustainable supply chains into liquid carbon assets.
+            </p>
+          </div>
+          
+          <!-- Pillar 3 -->
+          <div class="glass-dark p-8 rounded-2xl hover-lift reveal reveal-delay-3">
+            <div class="w-12 h-12 rounded-full bg-sage/20 flex items-center justify-center text-sage mb-6">
+              <i data-lucide="network" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif text-xl mb-4">Intra-Portfolio Synergy</h3>
+            <p class="text-sm text-cream/70 leading-relaxed font-light">
+              We don't just write checks. We actively embed our portfolio brands into our corporate network, driving scale without burning capital on Google or Meta ad auctions.
+            </p>
+          </div>
+          
+        </div>
+        
+        <!-- Embedded Quote Block -->
+        <div class="max-w-4xl mx-auto relative reveal reveal-delay-4">
+          <i data-lucide="quote" class="absolute -top-6 -left-8 w-16 h-16 text-cream/5 transform -rotate-12"></i>
+          <blockquote class="text-center relative z-10">
+            <p class="font-serif text-2xl md:text-3xl leading-relaxed text-cream/90 italic mb-8">
+              "A 74% repeat order rate is not just a customer metric; it is an act of trust. Our mission is to scale that trust, not commoditize it."
+            </p>
+            <footer class="text-sm font-medium tracking-widest text-gold uppercase">
+              — Conscious Capitals Investment Committee
+            </footer>
+          </blockquote>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE STRATEGIC SYNERGY -->
+    <section id="synergy" class="py-24 bg-cream relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+          <h2 class="font-serif text-4xl md:text-5xl text-forest mb-4">The Strategic Synergy</h2>
+          <p class="text-lg text-charcoal/70 font-light">Why the Arjun & Priya dynamic perfectly interfaces with our thesis.</p>
+        </div>
+        
+        <!-- Synergy Map -->
+        <div class="relative max-w-5xl mx-auto">
+          
+          <!-- Connecting Line (Desktop) -->
+          <div class="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-sage/50 to-transparent transform -translate-y-1/2 z-0"></div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
+            
+            <!-- Arjun's Pillar -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-forest/10 hover-lift reveal reveal-delay-1">
+              <div class="inline-block px-3 py-1 rounded bg-forest/5 text-forest text-xs font-bold uppercase tracking-wider mb-6">Product & Quality</div>
+              <h3 class="font-serif text-2xl text-forest mb-6">Arjun’s Pillar:<br>The Product Shield</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">Absolute veto over ingredient sourcing</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">₹2 Crore dedicated R&D Defense Fund</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="check-circle-2" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">100% clean-label guarantee (No synthetic fillers, ever)</span>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- The Glue -->
+            <div class="flex flex-col justify-center items-center text-center reveal reveal-delay-2 py-8 md:py-0">
+              <div class="w-16 h-16 rounded-full bg-forest text-gold flex items-center justify-center mb-4 shadow-lg ring-8 ring-forest/5">
+                <i data-lucide="infinity" class="w-8 h-8"></i>
+              </div>
+              <h4 class="font-serif text-xl text-forest mb-2">The Conscious Capitals Glue</h4>
+              <p class="text-xs text-charcoal/70 font-light px-4">Scaling customer acquisition while legally protecting ingredient chemistry.</p>
+            </div>
+            
+            <!-- Priya's Pillar -->
+            <div class="bg-white rounded-2xl p-8 shadow-sm border border-forest/10 hover-lift reveal reveal-delay-3">
+              <div class="inline-block px-3 py-1 rounded bg-sage/10 text-sage text-xs font-bold uppercase tracking-wider mb-6">Growth & Scale</div>
+              <h3 class="font-serif text-2xl text-forest mb-6">Priya’s Pillar:<br>The Marketing Engine</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">₹3 Crore allocated D2C performance budget</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">Direct B2B corporate integration</span>
+                </li>
+                <li class="flex items-start space-x-3">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-sage shrink-0 mt-0.5"></i>
+                  <span class="text-sm text-charcoal/80 font-light">Localized premium gym partnership rollout</span>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: THE METRICS & MOAT -->
+    <section id="metrics" class="py-24 bg-[#EBE9E1] relative">
+      <div class="max-w-7xl mx-auto px-6">
+        
+        <div class="mb-16 reveal">
+          <h2 class="font-serif text-4xl md:text-5xl text-forest mb-4">The Metrics & Moat</h2>
+          <p class="text-lg text-charcoal/70 font-light">Live ESG & Carbon Ledger Dashboard</p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          
+          <!-- Column 1: Live Dashboard Cards -->
+          <div class="lg:col-span-1 space-y-6">
+            <!-- Metric 1 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-sage hover-lift reveal reveal-delay-1">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-sm font-semibold text-charcoal/60 uppercase tracking-wider">Customer Loyalty</h4>
+                <i data-lucide="users" class="w-5 h-5 text-sage/70"></i>
+              </div>
+              <div class="flex items-baseline space-x-2 mb-2">
+                <span class="font-serif text-4xl text-forest">74%</span>
+                <span class="text-sm font-medium text-sage">Repeat Rate</span>
+              </div>
+              <div class="bg-sage/10 text-sage text-xs inline-flex px-2 py-1 rounded font-medium animate-pulse">
+                2x Industry Standard (38%)
+              </div>
+            </div>
+            
+            <!-- Metric 2 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border-l-4 border-gold hover-lift reveal reveal-delay-2">
+              <div class="flex justify-between items-start mb-2">
+                <h4 class="text-sm font-semibold text-charcoal/60 uppercase tracking-wider">Carbon Asset Value</h4>
+                <i data-lucide="line-chart" class="w-5 h-5 text-gold/70"></i>
+              </div>
+              <div class="flex items-baseline space-x-2 mb-4">
+                <span class="font-serif text-3xl text-forest">₹1,250</span>
+                <span class="text-xs text-charcoal/60 font-medium">Floor Price / Credit</span>
+              </div>
+              <!-- Mini Graph Mockup -->
+              <div class="h-12 w-full flex items-end space-x-1">
+                <div class="w-1/6 bg-gold/20 h-1/4 rounded-t-sm"></div>
+                <div class="w-1/6 bg-gold/30 h-2/4 rounded-t-sm"></div>
+                <div class="w-1/6 bg-gold/50 h-2/4 rounded-t-sm"></div>
+                <div class="w-1/6 bg-gold/70 h-3/4 rounded-t-sm"></div>
+                <div class="w-1/6 bg-gold/90 h-full rounded-t-sm"></div>
+                <div class="w-1/6 bg-gold h-4/5 rounded-t-sm relative group">
+                  <div class="absolute -top-6 left-1/2 -translate-x-1/2 bg-forest text-cream text-[10px] py-0.5 px-1.5 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Sold to Portfolio</div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Metric 3 -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-forest/10 hover-lift reveal reveal-delay-3">
+               <div class="flex justify-between items-start mb-2">
+                <h4 class="text-sm font-semibold text-charcoal/60 uppercase tracking-wider">Profitability Path</h4>
+                <i data-lucide="trending-up" class="w-5 h-5 text-forest/50"></i>
+              </div>
+              <div class="flex items-baseline space-x-2 mb-2">
+                <span class="font-serif text-3xl text-forest">₹20 Lakh</span>
+                <span class="text-xs text-charcoal/60 font-medium">Net Profit Run-rate</span>
+              </div>
+              <div class="w-full bg-forest/10 rounded-full h-1.5 mt-4">
+                <div class="bg-forest h-1.5 rounded-full" style="width: 75%"></div>
+              </div>
+              <p class="text-[10px] text-right mt-1 text-charcoal/50">Projected M12 Target: 75% reached</p>
+            </div>
+          </div>
+          
+          <!-- Column 2: Interactive Map -->
+          <div class="lg:col-span-2 bg-white rounded-3xl shadow-sm border border-forest/10 p-8 reveal reveal-delay-4 relative overflow-hidden flex flex-col">
+            <h3 class="font-serif text-2xl text-forest mb-6">Raw Material Sourcing Ledger</h3>
+            <p class="text-sm text-charcoal/70 mb-8 max-w-lg">Click on nodes to view direct-to-farmer premium metrics and verified purity certificates.</p>
+            
+            <div class="flex-grow relative bg-cream/50 rounded-2xl border border-forest/5 flex items-center justify-center p-8">
+              <!-- Decorative Map Elements -->
+              <svg class="absolute inset-0 w-full h-full opacity-10" xmlns="http://www.w3.org/2000/svg">
+                <!-- Abstract topographic lines -->
+                <path d="M 0 50 Q 150 150 300 50 T 600 50" fill="none" stroke="currentColor" stroke-width="1"></path>
+                <path d="M 0 100 Q 150 200 300 100 T 600 100" fill="none" stroke="currentColor" stroke-width="1"></path>
+              </svg>
+
+              <div class="flex w-full justify-around items-center relative z-10">
+                <!-- Node 1 -->
+                <button class="source-node flex flex-col items-center group focus:outline-none" data-id="ashwagandha">
+                  <div class="w-16 h-16 rounded-full bg-sage text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform mb-3">
+                    <i data-lucide="leaf" class="w-8 h-8"></i>
+                  </div>
+                  <span class="font-medium text-sm text-forest">Ashwagandha</span>
+                  <span class="text-xs text-charcoal/50">Karnataka</span>
+                </button>
+
+                <!-- Connection -->
+                <div class="h-px bg-forest/20 flex-grow mx-4 relative hidden sm:block">
+                  <div class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 bg-[#EBE9E1] px-2 text-[10px] uppercase tracking-wider text-charcoal/40">Supply Chain</div>
+                </div>
+
+                <!-- Node 2 -->
+                <button class="source-node flex flex-col items-center group focus:outline-none" data-id="whey">
+                  <div class="w-16 h-16 rounded-full bg-forest text-white flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform mb-3">
+                    <i data-lucide="droplet" class="w-8 h-8"></i>
+                  </div>
+                  <span class="font-medium text-sm text-forest">Whey Isolate</span>
+                  <span class="text-xs text-charcoal/50">Local Farms</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Details Panel (Interactive) -->
+            <div id="details-panel" class="mt-6 bg-forest rounded-xl p-6 text-cream transition-opacity duration-300 reveal active">
+              <div class="flex items-start justify-between">
+                <div>
+                  <h4 id="details-title" class="font-serif text-xl mb-2 text-gold">Select a Node</h4>
+                  <p id="details-content" class="text-sm text-cream/80 mb-4 font-light">Interact with the map above to view the sourcing ledger data.</p>
+                  <div class="inline-flex items-center space-x-2 bg-cream/10 px-3 py-1.5 rounded-lg border border-cream/5">
+                    <i data-lucide="award" class="w-4 h-4 text-gold"></i>
+                    <span id="details-metrics" class="text-xs font-medium">--</span>
+                  </div>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-cream/5 flex items-center justify-center">
+                  <i data-lucide="file-check-2" class="w-5 h-5 text-gold"></i>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER & SIGN-OFF -->
+  <footer id="charter" class="bg-forest text-cream pt-20 pb-10 border-t-4 border-sage relative overflow-hidden">
+    <!-- Decorative texture -->
+    <div class="absolute inset-0 opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10 text-center reveal">
+      <i data-lucide="shield-alert" class="w-12 h-12 text-sage mx-auto mb-6"></i>
+      <h2 class="font-serif text-3xl md:text-4xl mb-6">Clean Label & Carbon-Neutral Pledge</h2>
+      
+      <div class="bg-white/5 border border-white/10 rounded-2xl p-8 mb-12 backdrop-blur-sm text-left">
+        <p class="text-sm font-light leading-relaxed text-cream/90 mb-4">
+          By accepting this Series Seed term sheet, ElonGates legally binds its operations to the Conscious Capitals Charter. We pledge to maintain 100% clean-label ingredient integrity, never substitute for synthetic fillers to improve margins, and transparently offset all measured carbon emissions through the firm's verified network.
+        </p>
+        <p class="text-sm font-light leading-relaxed text-cream/90 mb-6">
+          This union represents a commitment to scaling health, wealth, and environmental responsibility simultaneously.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row justify-between items-center pt-6 border-t border-white/10">
+          <div class="mb-4 sm:mb-0 text-center sm:text-left">
+            <p class="font-serif text-lg text-gold italic">Arjun & Priya</p>
+            <p class="text-[10px] uppercase tracking-widest text-cream/50">Founders, ElonGates</p>
+          </div>
+          <div class="h-8 w-px bg-white/20 hidden sm:block"></div>
+          <div class="text-center sm:text-right">
+             <p class="font-serif text-lg text-sage italic">Investment Committee</p>
+             <p class="text-[10px] uppercase tracking-widest text-cream/50">Conscious Capitals</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center justify-between pt-8 border-t border-white/10 text-xs text-cream/40">
+        <p class="mb-4 md:mb-0">© 2026 Conscious Capitals. All rights reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-cream transition-colors">Privacy Policy</a>
+          <a href="#" class="hover:text-cream transition-colors">Terms of Union</a>
+          <p class="italic">Mock Case Study</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
