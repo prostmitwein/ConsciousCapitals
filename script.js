@@ -66,4 +66,50 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Mobile Menu Logic
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  
+  let isMenuOpen = false;
+
+  if (mobileBtn && mobileMenu) {
+    mobileBtn.addEventListener('click', () => {
+      isMenuOpen = !isMenuOpen;
+      if (isMenuOpen) {
+        mobileMenu.classList.remove('translate-x-full');
+        mobileMenu.classList.add('translate-x-0');
+        mobileBtn.innerHTML = '<i data-lucide="x" id="mobile-menu-icon"></i>';
+        lucide.createIcons();
+      } else {
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+        mobileBtn.innerHTML = '<i data-lucide="menu" id="mobile-menu-icon"></i>';
+        lucide.createIcons();
+      }
+    });
+
+    // Close menu when a link is clicked
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        isMenuOpen = false;
+        mobileMenu.classList.remove('translate-x-0');
+        mobileMenu.classList.add('translate-x-full');
+        mobileBtn.innerHTML = '<i data-lucide="menu" id="mobile-menu-icon"></i>';
+        lucide.createIcons();
+      });
+    });
+  }
+
+  // Device Detection Optimization
+  // The layout natively auto-detects via Tailwind CSS media queries, 
+  // but we also add explicit JS detection for the user request.
+  const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+  if (isMobile) {
+    document.body.classList.add('is-mobile-device');
+    console.log("Mobile device detected: Layout optimized via responsive rules and device tag.");
+  } else {
+    document.body.classList.add('is-desktop-device');
+  }
 });

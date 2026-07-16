@@ -63,10 +63,23 @@
         </a>
       </div>
       
-      <!-- Mobile Menu Button (simplified for static) -->
-      <button class="md:hidden text-forest">
-        <i data-lucide="menu"></i>
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-forest focus:outline-none">
+        <i data-lucide="menu" id="mobile-menu-icon"></i>
       </button>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 top-20 bg-cream/98 backdrop-blur-lg z-40 transform translate-x-full transition-transform duration-300 md:hidden flex flex-col items-center pt-16 space-y-8 border-t border-forest/10">
+      <a href="#hero" class="mobile-link font-serif text-3xl text-forest hover:text-sage transition-colors">The Union</a>
+      <a href="#profile" class="mobile-link font-serif text-3xl text-forest hover:text-sage transition-colors">Why Conscious Capitals</a>
+      <a href="#synergy" class="mobile-link font-serif text-3xl text-forest hover:text-sage transition-colors">Synergy Map</a>
+      <a href="#metrics" class="mobile-link font-serif text-3xl text-forest hover:text-sage transition-colors">Sourcing Ledger</a>
+      <div class="pt-8">
+        <a href="#charter" class="mobile-link px-8 py-3.5 rounded-full bg-forest text-cream text-lg font-medium hover:bg-sage transition-colors shadow-md">
+          Explore the Charter
+        </a>
+      </div>
     </div>
   </header>
 
